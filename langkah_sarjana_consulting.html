@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langkah Sarjana Consulting - Wujudkan Gelar Sarjana Anda</title>
+    
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-graduation-cap text-brand-600 text-3xl mr-3"></i>
+                    <div>
+                        <span class="font-bold text-xl text-gray-900 block leading-tight">Langkah Sarjana</span>
+                        <span class="text-xs font-semibold text-brand-600 tracking-wider uppercase">Consulting</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#layanan" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Layanan</a>
+                    <a href="#prodi" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Program Studi</a>
+                    <a href="#alur" class="text-gray-600 hover:text-brand-600 font-medium transition-colors">Cara Kerja</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#kontak" class="bg-brand-600 hover:bg-brand-700 text-white px-5 py-2.5 rounded-full font-medium transition-all shadow-md hover:shadow-lg">Konsultasi Gratis</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 sm:pt-40 sm:pb-24 lg:pb-32 bg-gradient-to-br from-brand-50 via-white to-indigo-50 relative overflow-hidden">
+        <!-- Background Decorations -->
+        <div class="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-brand-100 rounded-full blur-3xl opacity-50"></div>
+        <div class="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-indigo-100 rounded-full blur-3xl opacity-50"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-brand-100 text-brand-700 font-semibold text-sm mb-6 border border-brand-200">
+                Solusi Kuliah Pekerja Sibuk
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight mb-6">
+                Wujudkan Gelar Sarjana Anda, <br class="hidden sm:block">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600">Mulai Langkah Pertama di Sini.</span>
+            </h1>
+            <p class="mt-4 text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Karena hidup harus terus berjalan, jangan biarkan kerumitan administrasi menghentikan impian pendidikan Anda. Fokuslah pada karir, biarkan kami yang mengurus birokrasi pendaftaran kuliah 100% online Anda sampai tuntas.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#kontak" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-semibold rounded-full text-white bg-brand-600 hover:bg-brand-700 md:text-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                    Mulai Langkahmu Sekarang <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#layanan" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 border-2 border-gray-200 text-base font-semibold rounded-full text-gray-700 bg-white hover:bg-gray-50 hover:border-gray-300 md:text-lg transition-all duration-300">
+                    Pelajari Layanan
+                </a>
+            </div>
+            
+            <div class="mt-12 flex justify-center space-x-8 text-sm text-gray-500 font-medium">
+                <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2 text-lg"></i> 100% Online</span>
+                <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2 text-lg"></i> Resmi & Diakui</span>
+                <span class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2 text-lg"></i> Privasi Terjamin</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Layanan Kami -->
+    <section class="py-24 bg-white relative" id="layanan">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Mengapa Memilih Layanan Kami?</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Solusi administrasi "Terima Beres" khusus dirancang untuk calon mahasiswa yang tidak punya waktu luang.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 text-brand-600 text-2xl group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pendaftaran "Terima Beres"</h3>
+                    <p class="text-gray-600 leading-relaxed">Mulai dari pembuatan akun portal, pengisian biodata, hingga kompresi dan verifikasi dokumen. Anda cukup serahkan syaratnya, kami selesaikan sisanya.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 text-brand-600 text-2xl group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Pendampingan Digital</h3>
+                    <p class="text-gray-600 leading-relaxed">Bingung cara login kelas online? Kami berikan panduan langkah demi langkah cara aktivasi email kampus dan penggunaan aplikasi e-learning dengan bahasa yang mudah dipahami.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition-shadow duration-300 group">
+                    <div class="w-16 h-16 bg-brand-100 rounded-2xl flex items-center justify-center mb-6 text-brand-600 text-2xl group-hover:scale-110 group-hover:bg-brand-600 group-hover:text-white transition-all duration-300">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Bebas Ribet Tiap Semester</h3>
+                    <p class="text-gray-600 leading-relaxed">Tidak perlu takut terlewat batas waktu. Kami akan memantau, mengingatkan, dan membantu Anda mengurus pengisian KRS serta tagihan SPP rutin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rekomendasi Program Studi -->
+    <section class="py-24 bg-gray-900 text-white" id="prodi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-brand-400 font-semibold tracking-wide uppercase text-sm mb-2 block">Pilihan Terpopuler</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Program Studi Terfavorit Pekerja</h2>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto">Kami merekomendasikan jurusan dengan prospek karir paling menjanjikan dan fleksibilitas tinggi untuk profesional.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Prodi 1 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-brand-500 transition-colors duration-300">
+                    <div class="bg-gray-900 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-blue-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-white">Manajemen & Bisnis</h3>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">Pilihan utama bagi supervisor, staf operasional, atau pengusaha yang mengincar jenjang karir manajerial.</p>
+                    <ul class="text-xs text-gray-500 space-y-2 font-medium">
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>S1 Manajemen</li>
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>S1 Akuntansi</li>
+                    </ul>
+                </div>
+                
+                <!-- Prodi 2 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-brand-500 transition-colors duration-300">
+                    <div class="bg-gray-900 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-2xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-white">Sistem Informasi</h3>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">Sangat direkomendasikan untuk pekerja IT otodidak atau staf yang butuh ijazah linier di era digital.</p>
+                    <ul class="text-xs text-gray-500 space-y-2 font-medium">
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>S1 Sistem Informasi</li>
+                    </ul>
+                </div>
+                
+                <!-- Prodi 3 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-brand-500 transition-colors duration-300">
+                    <div class="bg-gray-900 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-balance-scale text-2xl text-amber-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-white">Ilmu Hukum & Publik</h3>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">Incaran utama bagi honorer, aparatur desa, staf HRD, atau pendaftar CPNS/BUMN.</p>
+                    <ul class="text-xs text-gray-500 space-y-2 font-medium">
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>S1 Ilmu Hukum (S.H.)</li>
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>S1 Ilmu Pemerintahan</li>
+                    </ul>
+                </div>
+                
+                <!-- Prodi 4 -->
+                <div class="bg-gray-800 rounded-2xl p-8 border border-gray-700 hover:border-brand-500 transition-colors duration-300">
+                    <div class="bg-gray-900 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-2xl text-rose-400"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3 text-white">Ilmu Komunikasi</h3>
+                    <p class="text-sm text-gray-400 mb-4 leading-relaxed">Ideal untuk pekerja di bidang PR, Sales, Marketing, atau industri kreatif yang dinamis.</p>
+                    <ul class="text-xs text-gray-500 space-y-2 font-medium">
+                        <li><i class="fas fa-check text-brand-500 mr-2"></i>S1 Ilmu Komunikasi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Kerja -->
+    <section class="py-24 bg-gray-50" id="alur">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">4 Langkah Mudah Menuju Bangku Kuliah</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Kami mendesain alur pendaftaran sesederhana mungkin agar tidak mengganggu jam kerja Anda.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Garis Penghubung (Hanya Desktop) -->
+                <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-1 bg-gray-200 z-0"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-6 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-white text-brand-600 font-extrabold flex items-center justify-center text-3xl mb-6 border-4 border-brand-100 shadow-md">1</div>
+                        <h4 class="font-bold text-xl text-gray-900 mb-2">Konsultasi</h4>
+                        <p class="text-gray-600 text-sm">Hubungi kami via WhatsApp untuk diskusi program studi yang paling pas.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-white text-brand-600 font-extrabold flex items-center justify-center text-3xl mb-6 border-4 border-brand-100 shadow-md">2</div>
+                        <h4 class="font-bold text-xl text-gray-900 mb-2">Kirim Dokumen</h4>
+                        <p class="text-gray-600 text-sm">Kirim foto KTP, Ijazah, dan Pas Foto secara online melalui jalur aman.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-white text-brand-600 font-extrabold flex items-center justify-center text-3xl mb-6 border-4 border-brand-100 shadow-md">3</div>
+                        <h4 class="font-bold text-xl text-gray-900 mb-2">Proses Admin</h4>
+                        <p class="text-gray-600 text-sm">Anda tetap fokus bekerja, biarkan tim kami mengurus seluruh input data ke kampus.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-24 h-24 rounded-full bg-brand-600 text-white font-extrabold flex items-center justify-center mb-6 border-4 border-brand-200 shadow-xl shadow-brand-500/40">
+                            <i class="fas fa-graduation-cap text-3xl"></i>
+                        </div>
+                        <h4 class="font-bold text-xl text-gray-900 mb-2">Siap Kuliah!</h4>
+                        <p class="text-gray-600 text-sm">Terima akun resmi mahasiswa, jadwal, dan panduan belajar. Anda siap mulai!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Kontak -->
+    <section class="py-24 bg-white relative overflow-hidden" id="kontak">
+        <!-- Background Accent -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-brand-50 transform skew-x-12 translate-x-32 -z-10"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+                <div class="grid md:grid-cols-2">
+                    <!-- Text Area -->
+                    <div class="p-10 md:p-14 bg-gradient-to-br from-brand-700 to-brand-900 text-white flex flex-col justify-center">
+                        <span class="text-brand-300 font-semibold mb-2">Ambil Kesempatan Sekarang</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mb-6 leading-tight">Jangan Tunda Masa Depan Karir Anda.</h2>
+                        <p class="text-brand-100 mb-8 text-lg">
+                            Dapatkan konsultasi gratis hari ini. Ketahui bagaimana Langkah Sarjana Consulting dapat merancang jalur pendidikan yang paling cocok dengan jadwal padat Anda.
+                        </p>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-brand-400 mr-3 text-xl"></i> Respon Cepat</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-brand-400 mr-3 text-xl"></i> 100% Rahasia & Aman</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-brand-400 mr-3 text-xl"></i> Transparansi Biaya Jasa</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Form Area -->
+                    <div class="p-10 md:p-14">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-2">Mulai Konsultasi (Via WhatsApp)</h3>
+                        <p class="text-gray-500 mb-8">Isi data singkat di bawah ini, admin fasilitator kami akan segera membalas pesan Anda.</p>
+                        
+                        <form onsubmit="sendToWhatsApp(event)" class="space-y-6">
+                            <div>
+                                <label for="waName" class="block text-sm font-semibold text-gray-700 mb-2">Nama Lengkap</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <i class="fas fa-user text-gray-400"></i>
+                                    </div>
+                                    <input type="text" id="waName" required class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors bg-gray-50 focus:bg-white" placeholder="Contoh: Budi Santoso">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="waProdi" class="block text-sm font-semibold text-gray-700 mb-2">Minat Program Studi (Opsional)</label>
+                                <div class="relative">
+                                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                        <i class="fas fa-book-open text-gray-400"></i>
+                                    </div>
+                                    <select id="waProdi" class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors bg-gray-50 focus:bg-white text-gray-700 appearance-none">
+                                        <option value="Belum Menentukan">Belum tahu, ingin konsultasi dulu</option>
+                                        <option value="Manajemen / Bisnis">Manajemen / Administrasi Bisnis</option>
+                                        <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                                        <option value="Ilmu Hukum">Ilmu Hukum</option>
+                                        <option value="Sistem Informasi">Sistem Informasi / IT</option>
+                                        <option value="Lainnya">Jurusan Lainnya</option>
+                                    </select>
+                                    <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+                                        <i class="fas fa-chevron-down text-gray-400 text-sm"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-4 rounded-xl transition duration-300 flex justify-center items-center shadow-lg shadow-green-500/30 text-lg mt-4">
+                                <i class="fab fa-whatsapp text-2xl mr-3"></i> Chat WhatsApp Sekarang
+                            </button>
+                            <p class="text-xs text-center text-gray-400 mt-4"><i class="fas fa-lock mr-1"></i> Data Anda tidak akan disebarluaskan.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-graduation-cap text-brand-500 text-2xl mr-2"></i>
+                    <div>
+                        <span class="font-bold text-lg text-white block leading-none">Langkah Sarjana</span>
+                        <span class="text-[10px] font-semibold text-brand-500 tracking-wider uppercase">Consulting</span>
+                    </div>
+                </div>
+                <div class="text-sm">
+                    Jasa Fasilitator Administrasi Pendidikan Jarak Jauh
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm mb-4 md:mb-0">&copy; 2026 Langkah Sarjana Consulting. All rights reserved.</p>
+                
+                <p class="text-xs text-gray-500 max-w-xl md:text-right">
+                    <strong>Disclaimer:</strong> Kami adalah agen konsultan independen yang menawarkan jasa fasilitasi administrasi pendaftaran calon mahasiswa. Kami <strong>tidak berafiliasi secara langsung</strong> atau bertindak sebagai perwakilan resmi/legal dari institusi universitas negeri mana pun.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function sendToWhatsApp(event) {
+            // Mencegah form melakukan reload halaman
+            event.preventDefault(); 
+            
+            // Nomor WhatsApp Admin (GANTI DENGAN NOMOR ASLI, gunakan 62)
+            const phone = "6281234567890"; 
+            
+            // Ambil data dari form
+            const name = document.getElementById('waName').value || "Calon Mahasiswa";
+            const prodi = document.getElementById('waProdi').value;
+            
+            // Susun pesan
+            let message = `Halo Admin *Langkah Sarjana Consulting*,\n\n`;
+            message += `Perkenalkan saya *${name}*.\n`;
+            message += `Saya tertarik untuk mendaftar kuliah online tanpa ribet. \n\n`;
+            
+            if(prodi !== "Belum Menentukan") {
+                message += `Rencana minat prodi: *${prodi}*.\n\n`;
+            } else {
+                message += `Saya belum menentukan prodi dan ingin konsultasi dulu.\n\n`;
+            }
+            
+            message += `Mohon informasi lebih lanjut mengenai persyaratan dan biaya jasanya. Terima kasih!`;
+            
+            // Buat URL dan buka di tab baru
+            const waUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(waUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
